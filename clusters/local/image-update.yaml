@@ -18,9 +18,10 @@ spec:
         email: flux@example.com
       messageTemplate: |
         Update images:
-        {{range .Updated.Images}}
+        {{range .Changed.Images}}
         - {{.}}
         {{end}}
+
     push:
       branch: main
   update:

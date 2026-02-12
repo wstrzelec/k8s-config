@@ -17,6 +17,8 @@ spec:
       containers:
         - name: ssid-email-lookup
           image: ghcr.io/wstrzelec/ssid-email-lookup:v0.1.0 # {"$imagepolicy": "flux-system:ssid-email-lookup"}
+
+
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
