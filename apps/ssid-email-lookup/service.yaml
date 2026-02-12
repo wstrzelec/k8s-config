@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ssid-email-lookup
+spec:
+  type: ClusterIP
+  selector:
+    app: ssid-email-lookup
+  ports:
+  - port: 80
+    targetPort: 8000

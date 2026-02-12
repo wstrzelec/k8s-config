@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ssid-email-lookup
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ssid-email-lookup
+  template:
+    metadata:
+      labels:
+        app: ssid-email-lookup
+    spec:
+      containers:
+      - name: ssid-email-lookup
+        image: ghcr.io/your-org/ssid-email-lookup:v0.1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
