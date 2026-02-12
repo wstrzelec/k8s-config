@@ -8,19 +8,24 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+
   git:
     checkout:
       ref:
         branch: main
+
     commit:
       author:
         name: flux-bot
         email: flux@example.com
       messageTemplate: "Update image via Flux"
+
     push:
       branch: main
+
     secretRef:
       name: flux-git-push-secret
+
   update:
     path: ./apps
     strategy: Setters
