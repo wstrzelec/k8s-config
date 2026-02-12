@@ -6,12 +6,11 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 1m0s
+  url: https://github.com/wstrzelec/k8s-config
   ref:
     branch: main
   secretRef:
-    name: flux-system
-  url: ssh://git@github.com/wstrzelec/k8s-config
+    name: flux-git-push-secret
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
