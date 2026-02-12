@@ -4,3 +4,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - ../../apps/ssid-email-lookup
+  - ssid-email-lookup-image-repo.yaml
+  - ssid-email-lookup-image-policy.yaml
+  - image-update.yaml

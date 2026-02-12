@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: ssid-email-lookup
+  namespace: flux-system
+spec:
+  image: ghcr.io/wstrzelec/ssid-email-lookup
+  interval: 1m0s
+  secretRef:
+    name: ghcr-secret
