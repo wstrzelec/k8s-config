@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ssid-email-lookup
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: ssid-email-lookup
