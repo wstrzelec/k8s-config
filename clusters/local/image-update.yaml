@@ -16,11 +16,7 @@ spec:
       author:
         name: flux-bot
         email: flux@example.com
-      messageTemplate: |
-        Update images:
-        {{range .Changed}}
-        - {{.}}
-        {{end}}
+      messageTemplate: "Update image via Flux"
 
     push:
       branch: main
