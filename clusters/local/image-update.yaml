@@ -24,9 +24,6 @@ spec:
     push:
       branch: main
 
-    secretRef:
-      name: flux-git-push-secret
-
   update:
     path: ./apps
     strategy: Setters
