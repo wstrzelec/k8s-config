@@ -7,5 +7,5 @@ spec:
   imageRepositoryRef:
     name: ssid-email-lookup
   policy:
-    semver:
-      range: ">=0.1.0"
+    alphabetical:
+      order: asc
