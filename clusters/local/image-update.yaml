@@ -18,7 +18,7 @@ spec:
         email: flux@example.com
       messageTemplate: |
         Update images:
-        {{range .Changed.Images}}
+        {{range .Changed}}
         - {{.}}
         {{end}}
 
