@@ -12,9 +12,11 @@ spec:
       labels:
         app: ssid-email-lookup
     spec:
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
-      - name: ssid-email-lookup
-        image: ghcr.io/your-org/ssid-email-lookup:v0.1.0
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 8000
+        - name: ssid-email-lookup
+          image: ghcr.io/your-org/ssid-email-lookup:v0.1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
