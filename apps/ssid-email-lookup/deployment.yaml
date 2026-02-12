@@ -16,7 +16,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: ssid-email-lookup
-          image: ghcr.io/your-org/ssid-email-lookup:v0.1.0
+          image: ghcr.io/wstrzelec/ssid-email-lookup:v0.1.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
