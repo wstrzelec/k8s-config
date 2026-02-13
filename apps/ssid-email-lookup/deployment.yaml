@@ -20,3 +20,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: smm-secrets
